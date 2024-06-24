@@ -1,0 +1,14 @@
+<!-- This is the launch file starting 5 nodes -->
+
+<launch>
+    <!-- To start a node the package name and the file name of the nodes must be give as done below -->
+    <node pkg="ar_week8_test" type="compute_cubic_coeffs.py"  name="compute_coeffs_service" />
+    <node pkg="ar_week8_test" type="cubic_traj_planner.py"  name="planner" />
+    <node pkg="ar_week8_test" type="plot_cubic_traj.py"  name="plotter" />
+    <node pkg="ar_week8_test" type="points_generator.py"  name="generator" />
+    
+    <!-- For the rqt_plot node below, also the topics must be given as parameters using "args" -->
+    <node pkg="rqt_plot" type ="rqt_plot" name="rqt_plot" args="/trajPos /trajAcc /trajVel"/>
+
+</launch>
+
