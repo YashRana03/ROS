@@ -1,4 +1,4 @@
-To run the package
+To run the package in Linux
 
 1) Open ros NOETIC
 2) Go to the catkin_ws directory
