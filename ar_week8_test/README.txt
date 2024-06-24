@@ -1,8 +1,3 @@
-
-Code developed by: YASH RANA KUMAR
-    
-Id: 210074257
-
 To run the package
 
 1) Open ros NOETIC
